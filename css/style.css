@@ -126,7 +126,7 @@ body {
   color: #ffc92f;
   background: #1b1b1b;
 }
-.conteiner{
+.container{
   margin: 0 auto;
   width: 1300px;
 }
@@ -140,6 +140,27 @@ body {
   background: #ffc92f;
   margin-bottom: 35px;
   margin-left: 27px;
+  position: relative;
+}
+.products__price{
+  position: absolute;
+  top: 18px;
+  left: -6px;
+  width: 126px;
+  border-bottom: 45px solid #232323;
+  border-left: 5px solid transparent;
+  border-right: 2px solid transparent;
+  transform: rotate(-181deg);
+}
+.products__price--amount {
+font-size: 30px;
+font-weight: bold;
+font-family: 'Yanone Kaffeesatz', Arial, sans-serif;
+color: #fff;
+transform: rotate(181deg);
+position: absolute;
+top: 2px;
+right: 28px;
 }
 .products__content{
   height: 100%;
@@ -152,6 +173,12 @@ body {
 .products__item--color-black{
   background: #232323;
 } 
+.products__item--color-black .products__price{
+  border-bottom-color: #ffc92f;
+} 
+.products__item--color-black .products__price--amount{
+  color: #212121;
+}
 .products__item--size-double{
   width: 630px;
   height: 544px;  
@@ -194,4 +221,37 @@ body {
 .products__disc--text{
   text-align: center;
   margin-bottom: 18px;
+}
+
+.collections__list{
+  display: flex
+}
+.collections__item{
+  min-height: 474px;
+  flex: 1;
+  overflow: hidden;
+  margin-right: 30px;
+  background: url('../img/bg/pattern.png') center center / 500px;
+}
+.collections__item:last-child{
+  margin-right: 0;
+}
+.collections__link{
+  display: block;
+  padding: 74px 13% 74px 77%;
+  text-decoration: none;
+  color: inherit;
+  font-size: 15px;
+}
+.collections__title{
+  font-family: 'Yanone Kaffeesatz', Arial, sans-serif;
+  font-size: 70px;
+  font-weight: bold;
+  line-height: 1;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 111px;
+}
+.collections__desc{
+  margin-bottom: 28px;
 }
