@@ -130,11 +130,16 @@ body {
   margin: 0 auto;
   width: 1300px;
 }
+.products__list{
+  display: flex;
+  flex-wrap: wrap;
+}
 .products__item{
   width: 302px;
   height: 386px;
   background: #ffc92f;
   margin-bottom: 35px;
+  margin-left: 27px;
 }
 .products__content{
   height: 100%;
@@ -143,6 +148,13 @@ body {
   justify-content: center;
   position: relative;
   overflow: hidden;
+}
+.products__item--color-black{
+  background: #232323;
+} 
+.products__item--size-double{
+  width: 630px;
+  height: 544px;  
 }
 .products__item:hover .products__disc{
   transform: translateY(0%);
