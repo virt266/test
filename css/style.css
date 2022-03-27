@@ -22,6 +22,7 @@ ul > li{
 body {
   font: 16px / 1.42 "Roboto", Arial, sans-serif;
   color: #212121;
+  background: #fcf5e6;
   -webkit-font-smoozing: antialiased;
   -moz-osx-font-smoozing: grayscale;
 }
@@ -278,7 +279,7 @@ left: -25%;
 }
 .collections__title{
   font-family: 'Yanone Kaffeesatz', Arial, sans-serif;
-  font-size: 70px;
+  font-size: 50px;
   font-weight: bold;
   line-height: 1;
   text-transform: uppercase;
@@ -290,4 +291,104 @@ left: -25%;
 }
 .collections{
   margin-bottom: 135px;
+}
+.footer__container{
+  width: 1105px;
+}
+.footer{
+  margin-bottom: 115px;
+}
+.site-menu{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 120px;
+}
+.site__menu__col{
+  margin-right: 20px;
+}
+.site__menu__col:last-child{
+  margin-right: 0px;
+}
+.site-menu__title{
+  font-family: 'Yanone Kaffeesatz', Arial, sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  color: inherit;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+.site-menu__item{
+  margin-bottom: 15px;
+}
+.site-menu__link{
+  color: #737373;
+  font-size: 15px;
+  text-decoration: none;
+}
+.site-menu__link:hover{
+  color: #d82727;
+}
+.site-menu__text{
+  font-size: 15px;
+  color: #1b1b1b;
+}
+.site-menu__text-row{
+  display: block;
+  color: inherit;
+  text-transform: none;
+  padding: 5px 0;
+}
+.site-menu__text-row:hover{
+  color: #d82727;
+}
+
+.extras{
+  display: flex;
+  margin-bottom: 95px;
+}
+.extras__col{
+  margin-right: 20px;
+  flex: 1;
+}
+.extras__col:last-child{
+  margin-right: 0;
+}
+.extras__best{
+  display: block;
+  text-align: center;
+  background: #232323;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  font-size: 50px;
+  padding: 40px 20px;
+  line-height: 1;
+}
+.extras__col-socials{
+  height: 100%;
+  background: url('../img/bg/pattern.png') center center / 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.socials{
+  display: flex;
+}
+.socials__item{
+  margin-right: 50px;
+}
+.socials__item:last-child{
+  margin-right: 0;
+}
+.socials__links{
+  display: block;
+  width: 38px;
+  height: 38px;
+}
+.socials__links:hover .socials__icon{
+  fill: #d82727;
+}
+.socials__icon{
+  width: 100%;  
+  height: 100%;
 }
