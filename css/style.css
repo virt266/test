@@ -218,7 +218,7 @@ right: 28px;
   display: inline-block;
   text-decoration: none;
   padding: 10px 23px;
-  line-height: 1;
+  line-height: 1.3;
 }
 .btn:hover{
   background: #d82727;
@@ -335,7 +335,7 @@ left: -25%;
 .site-menu__text-row{
   display: block;
   color: inherit;
-  text-transform: none;
+  text-decoration: none;
   padding: 5px 0;
 }
 .site-menu__text-row:hover{
