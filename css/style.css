@@ -33,6 +33,51 @@ body {
   position: relative;
   margin-bottom: 130px; 
 }
+.sidebar{
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 325px;
+  background: #212121;
+  padding: 0 3% 0 4%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.sidebar__header{
+  position: absolute;
+  top: 29px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+}
+.sidebar__close-icon{
+  width: 29px;
+  height: 29px;
+  fill: #ffbc2f ;
+}
+.main__menu__item{
+  margin-bottom: 20px;
+}
+.side__menu__link:hover{
+  color: #d82727;
+}
+.side__menu__link{
+  font-family: 'Yanone Kaffeesatz', Arial, sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffc92f
+}
+.sidebar__close{
+  position: absolute;
+  top: -4px;
+  left: 23px;
+}
 .header {
   width: 1290px;
   margin: 0 auto;
