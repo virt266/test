@@ -28,23 +28,44 @@
       </a>
     </header>
     <div class="fade__content">
-      <div class="fade-slider">
-        <div class="fade-slider__item">
+      <ul class="fade-slider"> 
+        <li class="fade-slider__item fade-slider__item--style-htirts fade-slider__item--visible">
           <div class="fade__slider__text">
-            <div class="lined-text">
-              <h1 class="lined-text__word">ТРИ</h1>
-              <h1 class="lined-text__word">ФУТБОЛКИ</h1>
-              <h1 class="lined-text__word lined-text__word--color-yellow">ПО ЦЕНЕ</h1>
-              <h1 class="lined-text__word lined-text__word--color-yellow">ДВУХ</h1>
-            </div>
+            <h1 class="lined-text">
+              <div class="lined-text__word">ТРИ</div>
+              <div class="lined-text__word">ФУТБОЛКИ</div>
+              <div class="lined-text__word lined-text__word--color-yellow">ПО ЦЕНЕ</div>
+              <div class="lined-text__word lined-text__word--color-yellow">ДВУХ</div>
+            </h1>
           </div>
-        </div>
-      </div>
+        </li>
+        <li class="fade-slider__item fade-slider__item--style-games">
+          <div class="fade__slider__text">
+            <h1 class="lined-text">
+              <div class="lined-text__word lined-text__word--color-yellow">Любимые игры</div>
+              <div class="lined-text__word">На лучших футболках</div>
+            </h1>
+          </div>
+        </li>
+        <li class="fade-slider__item fade-slider__item--style-presents">
+          <div class="fade__slider__text">
+            <h1 class="lined-text">
+              <div class="lined-text__word">Подарки</div>
+              <div class="lined-text__word lined-text__word--color-yellow">для любимых</div>
+            </h1>
+          </div>
+        </li>
+      </ul>
     </div>
     <aside class="sidebar">
+      <a href="#" class="sidebar__hamburger">
+        <svg class="sidebar__hamburger-icon">
+          <use xlink:href="./img/icons/icons-sprite.svg#bars"></use>
+        </svg>
+      </a>
       <div class="sidebar__header">
         <a href="#" class="logo">
-          <img src="./img/logo/logo.png" alt="logo" class="logo__img">
+          <img src="./img/logo/logo.png" alt="" lass="logo__image">
         </a>
         <a href="#" class="sidebar__close">
           <svg class="sidebar__close-icon">
@@ -52,33 +73,33 @@
           </svg>
         </a>
       </div>
-      <nav class="side__menu sidebar-menu">
-        <ul class="side__menu_list">
-          <li class="main__menu__item">
-            <a href="#" class="side__menu__link">Детская коллекция</a>
+      <nav class="side-menu sidebar__menu">
+        <ul class="side-menu__list">
+          <li class="side-menu__item">
+            <a href="#" class="side-menu__link">Детская коллекция</a>
           </li>
-          <li class="main__menu__item">
-            <a href="#" class="side__menu__link">Мужская коллекция</a>
+          <li class="side-menu__item">
+            <a href="#" class="side-menu__link">Мужская коллекция</a>
           </li>
-          <li class="main__menu__item">
-            <a href="#" class="side__menu__link">Женския коллекция</a>
+          <li class="side-menu__item">
+            <a href="#" class="side-menu__link">Женская коллекция</a>
           </li>
-          <li class="main__menu__item">
-            <a href="#" class="side__menu__link">Популярные принты</a>
+          <li class="side-menu__item">
+            <a href="#" class="side-menu__link">Популярные принты</a>
           </li>
-          <li class="main__menu__item">
-            <a href="#" class="side__menu__link">Новые принты</a>
+          <li class="side-menu__item">
+            <a href="#" class="side-menu__link">Новые принты</a>
           </li>
-          <li class="main__menu__item">
-            <a href="#" class="side__menu__link">Специально предложение</a>
+          <li class="side-menu__item">
+            <a href="#" class="side-menu__link">Специальные предложения</a>
           </li>
-          <li class="main__menu__item">
-            <a href="#" class="side__menu__link">Скоро в продаже</a>
+          <li class="side-menu__item">
+            <a href="#" class="side-menu__link">Скоро в продаже</a>
           </li>
         </ul>
       </nav>
-    </aside>          
-    </section>
+    </aside>
+  </section>
     <section class="product">
       <div class="container">
         <ul class="filter">
@@ -336,4 +357,7 @@
       </div>
     </footer>
   </div>
+  <script src="js/sidebar-menu.js" ></script>
+  <script src="js/fade-slider.js" ></script>
 </body>
+</html>

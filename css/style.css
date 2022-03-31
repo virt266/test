@@ -33,40 +33,56 @@ body {
   position: relative;
   margin-bottom: 130px; 
 }
-.sidebar{
+.sidebar {
+  width: 75px;
   position: absolute;
   left: 0;
   top: 0;
   bottom: 0;
-  width: 325px;
   background: #212121;
-  padding: 0 3% 0 4%;
+  padding: 0 3px 0 4px;
   box-sizing: border-box;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  transition: width .3s
 }
-.sidebar__header{
+.sidebar--opened .sidebar__header{
+  display: flex;
+}
+
+.sidebar--opened{
+  width: 325px;
+  padding: 0 3% 0 4%;  
+}
+.sidebar__header {
   position: absolute;
   top: 29px;
   left: 0;
   right: 0;
-  display: flex;
+  display: none;
   justify-content: center;
 }
-.sidebar__close-icon{
+.sidebar__close {
+position: absolute;
+top: -4px;
+right: 23px;
+}
+
+.sidebar__close-icon {
   width: 29px;
   height: 29px;
   fill: #ffbc2f ;
 }
-.main__menu__item{
+.side-menu__item {
   margin-bottom: 20px;
 }
+
 .side__menu__link:hover{
   color: #d82727;
 }
-.side__menu__link{
+.side-menu__link{
   font-family: 'Yanone Kaffeesatz', Arial, sans-serif;
   font-size: 20px;
   text-transform: uppercase;
@@ -76,8 +92,37 @@ body {
 .sidebar__close{
   position: absolute;
   top: -4px;
-  left: 23px;
+  right: 23px;
 }
+
+.sidebar__menu{
+  position: absolute;
+  left: -400px;
+  transition: left .3s;
+}
+
+.sidebar--opened .sidebar__hamburger {
+  display: none;
+ } 
+.sidebar--opened .sidebar__menu{
+  left: 0;
+  width: 100%;
+  text-align: center;
+  transition-delay: .3s;
+}
+.sidebar__hamburger{
+  display: block;
+  position: absolute;
+  top: 27px;
+  left: 50%;
+  transform: translate(-50%)
+}
+.sidebar__hamburger-icon{
+  width: 29px;
+  height: 29px;
+  fill: #ffbc2f;
+}
+
 .header {
   width: 1290px;
   margin: 0 auto;
@@ -111,21 +156,63 @@ body {
 .fade-slider{
   width: 100%;
   height: 100%;
+
 }
 .fade-slider__item{
-  background: url('../img/hero/slider_pic_1.png') center center / contain no-repeat;
   height: 100%;
-}
-.fade__slider__text{
   position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity .3s;
+}
+.fade-slider__item--visible{
+  opacity: 1;
+}
+.fade-slider__item--style-htirts{
+  background: url('../img/hero/slider_pic_1.png') center center / contain no-repeat;
+}
+.fade-slider__item--style-htirts .fade__slider__text{
   left: 50%;
   top: 50%;
   transform: translate(-164%, -52%)
 }
+
+.fade-slider__item--style-games{
+  background: url('../img/hero/slider_pic_2.png') center center / contain no-repeat; 
+}
+.fade-slider__item--style-games .fade__slider__text{
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+}
+.fade-slider__item--style-games .lined-text {
+  align-items: center;
+}
+
+.fade-slider__item--style-presents{
+  background: url('../img/hero/slider_pic_3.png') center center / contain no-repeat;  
+}
+
+.fade-slider__item--style-presents .fade__slider__text {
+  left: 0;
+  bottom: 0;
+  transform: translate(38%, -28%);
+}
+.fade-slider__item--style-presents .lined-text {
+  align-items: center;
+}
+
+.fade__slider__text{
+  position: absolute;
+}
+
 .lined-text{
   font-family: "alegreya", Arial, sans-serif;
   color: #fff;
-  font-size: 63px;
+  font-size: 44px;
   text-transform: uppercase;
   line-height: 1;
   display: flex;
