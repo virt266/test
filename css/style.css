@@ -255,7 +255,7 @@ right: 23px;
 .filter__link:hover {
   color: #d82727;
 }
-.filter__link--active{
+.filter__item .filter__link--active{
   color: #ffc92f;
   background: #1b1b1b;
 }
