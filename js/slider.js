@@ -11,6 +11,6 @@
 		}		
 		slider[index].classList.add(activeClass);
 
-	},5000);
+	},1000);
 
 }())
