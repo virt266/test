@@ -10,7 +10,7 @@ html, body{
 }
 .wrapper{
   overflow: hidden;
-  min-width: 1310px;
+  min-width: 1440px;
 }
 ul{
   margin: 0;
@@ -132,7 +132,6 @@ right: 23px;
   padding-top: 27px;
 }
 .mail {
-  display: inline-block;
   text-decoration: none;
   text-align: center;
   color: inherit;
