@@ -10,7 +10,7 @@ html, body{
 }
 .wrapper{
   overflow: hidden;
-  min-width: 1440px;
+  min-width: 1310px;
 }
 ul{
   margin: 0;
@@ -269,6 +269,7 @@ right: 23px;
 .products__list{
   display: flex;
   flex-wrap: wrap;
+  margin-left: -27px;
 }
 .products__item{
   width: 302px;
@@ -349,7 +350,7 @@ right: 28px;
   color: #ffc92f;
   display: inline-block;
   text-decoration: none;
-  padding: 10px 23px;
+  padding: 2px 30px;
   line-height: 1.3;
 }
 .btn:hover{
